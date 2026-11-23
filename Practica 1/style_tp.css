@@ -1,0 +1,164 @@
+/* estilos generares*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins, sans-serif";
+}
+body{
+    background: linear-gradient(135deg, #F1F8F4, #B7E4C7);
+    color: #333;
+    text-align: center;
+}
+header{
+    background: linear-gradient(90deg, #1B4332, #52B788);
+    color: white;
+    padding: 60px 20px;
+    box-shadow: 0 4px 15px rgba(0. 0, 0, 0.2);
+}
+header h1{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.2em;
+}
+/* navegacion (nav)*/
+nav{
+    background: #222;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+nav li{
+    margin: 10px 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+nav a:hover{
+    background: #52B788 ;
+    transform: scale(1.1);
+}
+.intro{
+    background: white;
+    padding: 60px 20px;
+    border-bottom: 5px solid #52B788;
+}
+.intro h2{
+    color: #2D6A4F ;
+    font-size: 2em;
+    margin-bottom: 5px solid #52B788;
+}
+/*targetas de presentacion perritos*/
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px 20px;
+}
+.card{
+    background: white;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s box-shadow  0.3s;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.card h3{
+    color: #2D6A4F;
+    padding: 0 15px;
+    margin: 10px 0 20px;
+}
+.card p{
+    color: #555;
+    padding: 0 15px;
+    margin: 10 0 20px;
+}
+.card button{
+    background: #52B788;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px;
+    transition: 0.3s;
+}
+.multis {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px 20px;
+}
+.multi{
+    background: white;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s box-shadow  0.3s;
+}
+.multi iframe{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.multi h3{
+    color: #2D6A4F;
+    padding: 0 15px;
+    margin: 10px 0 20px;
+}
+.multi p{
+    color: #555;
+    padding: 0 15px;
+    margin: 10 0 20px;
+}
+.multi :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.card button:hover{
+    background: #ee0979;
+    transform: scale(1.05);
+}
+footer{
+    background: #222;
+    color: white;
+    padding: 25px 20px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+/*Responsivo*/
+@media(max-width: 786px){
+    nav ul{
+        flex-direction: column;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1{
+        font-size: 2em;
+    }
+}
